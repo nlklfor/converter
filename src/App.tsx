@@ -20,7 +20,7 @@ const App: React.FC = () => {
       try {
         const response = await axios.get('http://api.exchangeratesapi.io/v1/latest', {
           params: {
-            access_key: import.meta.env.VITE_API_KEY,
+            access_key: 'e433d9eb25cc9089e2e1a3f4c1ad94bc',
           },
         });
         setRates(response.data.rates)
