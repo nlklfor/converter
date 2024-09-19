@@ -18,7 +18,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchCurrency = async () => {
       try {
-        const response = await axios.get('http://api.exchangeratesapi.io/v1/latest', {
+        const response = await axios.get('https://api.exchangeratesapi.io/v1/latest', {
           params: {
             access_key: 'e433d9eb25cc9089e2e1a3f4c1ad94bc',
           },
